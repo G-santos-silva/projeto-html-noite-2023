@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <head>
-        <h1>cadastro</h1>
-    </head>
-    <form action="cadastro.html" method="get">
-        <label>nome completo</label>
-        <input type="text" name="nome" placeholder="nome">
-        <label>data de nascimento</label>
-        <input type="date" name="data de nascimento">
-        <label>endereço</label>
-        <input type="text" name="endereço" placeholder="endereço">
-        <br>
-        <label>numero da casa</label>
-        <input type="number" name="numero da casa">
-        <label>bairro</label>
-        <input type="text" name="bairro">
-        <label>cidade</label>
-        <input type="text" name="cidade">
-        <label>sexo</label>
-        <input type="text">
-        <input type="radio" name="nome">
-        <input type="radio" name="nome">
-        <input type="radio" name="nome">
-        <input type="radio" name="nome">
-  
-        <br>
-        <button type="submit" >enviar</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Cadastro</h1>
+    </header>
+
+    <form class="user-form" method="get">
+      <label for="nome">
+        Nome completo:
+        <input type="text" id="nome" placeholder="nome" />
+      </label>
+
+      <label for="data de nascimento">
+        Data de nascimento:
+        <input
+          type="date"
+          id="data de nascimento"
+          placeholder="data de nascimento"
+        />
+      </label>
+
+      <label for="cidade">
+        Cidade:
+        <input type="text" id="cidade" />
+      </label>
+
+      <label for="masculino">
+        <input type="radio" name="sexo" id="masculino" />
+        Masculino
+      </label>
+
+      <label for="feminino">
+        <input type="radio" name="sexo" id="feminino" />
+        Feminino
+      </label>
+
+      <label for="outro">
+        <input type="radio" name="sexo" id="outro" />
+        Outro
+      </label>
+
+      <br />
+
+      <button type="submit">Enviar</button>
     </form>
+
     <a href="cadastro feiot.html">voltar pra pagina inicial</a>
     <ol>
-        <li><a href="receita1.html" target="_blank">receita de cuscuz</a></li>
-        <li><a href="receita2.html" target="_blank">receita de pizza</a></li>
-        <li><a href="receita3.html" target="_blank">receita de frango</a></li>
-       
+      <li><a href="receita1.html" target="_blank">receita de cuscuz</a></li>
+      <li><a href="receita2.html" target="_blank">receita de pizza</a></li>
+      <li><a href="receita3.html" target="_blank">receita de frango</a></li>
     </ol>
-
-</body>
+  </body>
 </html>
